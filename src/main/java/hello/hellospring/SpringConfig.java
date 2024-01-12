@@ -15,14 +15,14 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-//    private final DataSource dataSource;
+    private final DataSource dataSource;
     private EntityManager em;
 
 
 
     @Autowired
     public SpringConfig(DataSource dataSource, EntityManager em) {
-//        this.dataSource = dataSource;
+        this.dataSource = dataSource;
         this.em = em;
     }
 
